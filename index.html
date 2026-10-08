@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>College Registration Form</title>
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #e6f0ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .form-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+
+    /* Fly-in animation */
+    animation: flyIn 1s ease-out;
+  }
+
+  @keyframes flyIn {
+    from {
+      transform: translateY(-200px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  h2 {
+    text-align: center;
+    color: #0066cc;
+  }
+
+  .input-group {
+    margin: 15px 0;
+  }
+
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+
+  .input-group i {
+    margin-right: 8px;
+    color: #0066cc;
+  }
+
+  .input-group input,
+  .input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+    background: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background: #004d99;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="form-container">
+  <h2>Student Registration</h2>
+
+  <form>
+    <div class="input-group">
+      <label><i class="fa fa-user"></i> Full Name</label>
+      <input type="text" required>
+    </div>
+
+    <div class="input-group">
+      <label><i class="fa fa-envelope"></i> Email</label>
+      <input type="email" required>
+    </div>
+
+    <div class="input-group">
+      <label><i class="fa fa-phone"></i> Phone</label>
+      <input type="tel" required>
+    </div>
+
+    <div class="input-group">
+      <label><i class="fa fa-book"></i> Course</label>
+      <select>
+        <option>Computer Science</option>
+        <option>Engineering</option>
+        <option>Business</option>
+      </select>
+    </div>
+
+    <div class="input-group">
+      <label><i class="fa fa-lock"></i> Password</label>
+      <input type="password" required>
+    </div>
+
+    <button type="submit">
+      <i class="fa fa-paper-plane"></i> Register
+    </button>
+  </form>
+</div>
+
+</body>
+</html>
+
